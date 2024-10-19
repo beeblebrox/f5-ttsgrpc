@@ -1,4 +1,4 @@
-# ff5-ttssgrpc
+# ff5-ttsgrpc
 This is a simple grpc tts server that can run inference for a single voice and prompt at a time.
 
 ## User Installation
