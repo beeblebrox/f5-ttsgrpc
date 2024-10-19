@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package tts;
+
+message IsReadyMsg {
+
+}
+
+message IsReadyResponse {
+  bool ready = 1;
+}
+
+message SayMsg {
+  string message = 1;
+}
+
+message SayResponse {
+  bytes data = 1;
+  string format = 2;
+}
+
+service TTS {
+  rpc Say(stream SayMsg) returns (stream SayResponse) {}
+}
