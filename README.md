@@ -24,9 +24,22 @@ git submodule update --recursive
 
 ### Setup python 3.10 conda environment, or your favorite env manager
 
-## Install requirements
+#### Install requirements
 ```shell
 pip install -r requirements.txt
+```
+
+## To Run
+Edit [setup-example.py](setup-example.py) and move to setup.py (or whatever name you want).
+Create one for each different instance you need.
+
+ex:
+```shell
+python serve.py setup
+```
+
+```shell
+python serve.py setup2
 ```
 
 ## Dev Information
